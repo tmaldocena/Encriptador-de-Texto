@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="img/alura-logo-sin-fondo.png"></h1>
+                <ul>
+                    <li>Encriptador de Texto</li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="introduccion">
+                <h3 class="texto-principal">Bienvenido al <strong>Encriptador de Texto.</strong> Aquí podrá encriptar su texto, como también desencriptarlo</h3>
+            </section>
+            <section class="encriptado">
+                <label for="texto-encriptar"></label>
+                <textarea style="resize: none;" cols="30" rows="10" id="encripto" class="input-padron" required placeholder="Ingrese el Texto que Desea Encriptar o Desencriptar..."></textarea>
+                <ul>
+                    <li class="botones"><button type="button" id="boton-encriptar">Encriptar</button></li><li class="botones">
+                    <button type="button" id="boton-desencriptar">Desencriptar</button></li>
+                </ul>
+            </section><section class="resultado">
+                <label for="resultado-texto"></label>
+                <textarea readonly style="resize: none;" cols="30" rows="10" id="result" class="input-padron"></textarea>
+                <button type="button" class="botones" id="copyBoton">Copiar Texto</button>
+            </section>
+            <img src="img/padlock-unscreen.gif" id="candado" class="invisible">
+            
+            <section class="descripcion">
+                <h1><strong>¿Que es Encriptar?</strong></h1>
+                <ul class="lista-descriptiva">
+                    <li>Convertir el contenido de un mensaje en otro código para que pueda ser leído o interpretado en otro momento.</li>
+                    <li>La encriptación convierte los datos en texto codificado utilizando una clave secreta: dicho <strong>texto</strong> ilegible solo se puede decodificar con la clave secreta.</li>
+                    <li>Contiene una forma del texto plano original que es ilegible para un ser humano o una computadora sin el cifrado adecuado para descifrarlo. El descifrado es el proceso inverso que convierte un texto cifrado en texto legible.</li>
+                </ul><img src="img/robots-alura-sf.png" class="robots">
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.aluracursos.com/"><img src="img/alura-font-sf.png" class="alura-footer"></a>
+            <p>Hecho por <a href="https://github.com/tmaldocena">Tomás Maldocena</a> - 2022</p>
+        </footer>
+
+        <script src="js/encriptar.js"></script>
+        <script src="js/desencriptar.js"></script>
+        <script src="js/copiar.js"></script>
+    </body>
+</html>

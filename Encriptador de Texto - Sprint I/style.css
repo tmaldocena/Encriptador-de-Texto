@@ -1,0 +1,327 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #007991;
+    padding: 20px 0px;;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.caja img{
+    width: 60px;
+}
+
+.caja li{
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    display: inline-block;
+    color: #BCD8C1;
+    font-size: 25px;
+}
+
+.introduccion{
+    padding: 2em 0;
+    background-color: #BCD8C1;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.texto-principal{
+    text-align: center;
+    font-size: 30px;
+    clear: left;
+    color: #007991;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.encriptado{
+    background-color: #BCD8C1;
+    width: 60%;
+    display: inline-block;
+    height: 500px;
+}
+
+.encriptado label{
+    position: absolute;
+}
+
+.encriptado button{
+    color:#222E50;
+    background: #007991;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 3em;
+    font-size: 20px;
+    transition: 1s all;
+}
+
+
+.encriptado button:hover{
+    background: #8fa593;
+    transform: scale(1.2);
+}
+
+
+.input-padron{
+    background-color: #d9eedd;
+    width: 80%;
+    margin: 50px;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #222E50;
+    text-decoration: underline;
+    outline: none;
+}
+
+.input-padron:active{
+    border: none;
+    outline: none;
+}
+
+.botones{
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 20px;
+    position: relative;
+    left: 7em;
+    padding: 10px 10px;
+    transition: 1s all;
+}
+
+
+.resultado{
+    width: 40%;
+    position: absolute;
+    display: inline-block;
+    background-color: #BCD8C1;
+    height: 500px;
+}
+
+.resultado button{
+    color:#222E50;
+    background: #007991;
+    border: none;
+    border-radius: 10px;
+    top: 10px;
+    padding: 1em 3em;
+    font-size: 20px;
+}
+
+.resultado button:hover{
+    background: #8fa593;
+    transform: scale(1.2);
+}
+
+.texto-encriptado{
+    background-color: #BCD8C1;
+    width: 440px;
+    height: 270px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 22px;
+    font-style: italic;
+    color: #222E50;
+}
+
+#candado{
+    position: relative;
+    vertical-align: top;
+    right: 275px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.descripcion{
+    background: linear-gradient(#BCD8C1,#121e41);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.descripcion h1{
+    font-size: 30px;
+    font-style: normal;
+    padding: 1em 2em;
+}
+
+.descripcion li{
+    margin: 2em;
+    font-size: 20px;
+    transition: 400ms;
+}
+
+.descripcion li:hover{
+    opacity: 60%;
+}
+
+.lista-descriptiva{
+    width: 40%;
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: top;
+    margin-bottom: 5em;
+}
+
+.lista-descriptiva li::before{
+    margin: 1em;
+    content: "ᐉ";
+}
+
+.robots{
+    transform: scale(0.5);
+    position: absolute;
+    top: 675px;
+    transition: 400ms;
+}
+
+.robots:hover{
+    transform: scale(0.6);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #121e41;
+}
+
+.alura-footer{
+    transform: scale(0.8);
+    transition: 2s;
+}
+
+.alura-footer:hover{
+    transform: scale(0.9);
+}
+
+footer p{
+    position: relative;
+    bottom: 3em;
+    font-size: 22px;
+    color: wheat;
+}
+
+p a{
+    color: wheat;
+}
+
+p a:hover{
+    color: rgb(197, 179, 145);
+}
+
+@media screen and (max-width:460px) {
+    body{
+        width: 825px;
+    }
+    .caja{
+        text-align: center;
+        width: auto;
+    }
+
+    .caja img{
+        width: 130px;
+    }
+
+    .caja li{
+        left: 0px;
+        position: relative;
+        padding: 1em;
+        bottom: 0px;
+        font-size: 50px;
+    }
+
+    .introduccion{
+        padding: 3em 0;
+        width: auto;
+    }
+
+    .texto-principal{
+        font-size: 45px;
+    }
+    
+    .encriptado{
+        width: auto;
+        display: block;
+        text-align: center;
+        height: 600px;
+    }
+
+    .encriptado button{
+        font-size: 28px;
+    }
+
+    .input-padron{
+        margin: 25px;
+        text-align: center;
+        font-size: 2em;
+        
+    }
+    
+    .botones{
+        display: block;
+        margin: 0px;
+        left: 0em;
+        width: 100%;
+    }
+
+    #candado{
+        display: none;
+    }
+
+    .resultado{
+        width: auto;
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .resultado button{
+        top: 0px;
+        font-size: 28px;
+        width: 50%;
+        left: 200px;
+    }
+
+    .descripcion{
+        font-size: 28px;
+    }
+    .descripcion h1{
+        padding: 2em 2em;
+        font-size: 40px;
+    }
+
+    .descripcion li{
+        font-size: 33px;
+    }
+
+    .lista-descriptiva{
+        width: 100%;
+    }
+
+    .robots{
+        display: none;
+    }
+
+    .alura-footer{
+        transform: scale(1.2);
+        margin-bottom: 2em;
+    }
+
+    footer p{
+        font-size: 30px;
+    }
+}
